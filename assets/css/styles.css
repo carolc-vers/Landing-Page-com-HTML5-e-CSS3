@@ -12,14 +12,29 @@
     justify-content: center;
 }
 
-.intro-text-content h2{
-    font-size: 6rem;
-    margin-bottom: 3rem;
-    text-transform: uppercase;
-    line-height: 1;
+.intro-text-content h2, p{
+    animation: go-back 1s;
 }
 
 .intro-img img{
     width: 100%;
     height: auto;
 }
+
+.top3-content{
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    height: 150vh;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
