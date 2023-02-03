@@ -1,3 +1,4 @@
+/*ESTILO DA INTRO*/
 .intro-content{
     position: relative;
     display: grid;
@@ -21,6 +22,7 @@
     height: auto;
 }
 
+/*ESTILO DO TOP TRÊS*/
 .top3-content{
     max-width: 64rem;
     display: flex;
@@ -71,6 +73,7 @@
     transform: rotate(5deg);
 }
 
+/*ESTILO DA GALERIA*/
 .gallery-img{
     width: 100%;
     max-width: 36rem;
@@ -84,6 +87,40 @@
 
 .gallery-img img:hover{
     transform: translate(-3%, -3%) scale(1.2);
+}
+
+/*ESTILO DOS INTEGRANTES*/
+.grid4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap);
+}
+
+.grid4 h3{
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.round{
+    border-radius: 100%;
+    overflow: hidden;
+    height: 20rem;
+    width: 20rem;
+    background: black;
+}
+
+.round img{
+    width: 100%;
+}
+
+.img-integrantes{
+    -webkit-filter: grayscale(100%);
+}
+
+.img-integrantes:hover{
+    -webkit-filter: grayscale(0%);
+    transition: 1s;
 }
 
 @keyframes go-back {
