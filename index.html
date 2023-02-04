@@ -26,12 +26,16 @@
 
 <body>
 
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label for="close-menu" class="close-menu-label" title="close-menu"></label>
+
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <a href="#"> <img class="img-logo" src="./assets/img/logo-rhcp.png" alt="Logo RHCP"> </a>
+            <a href="#home"> <img class="img-logo" src="./assets/img/logo-rhcp.png" alt="Logo RHCP"
+                onclick="getElementById('close-menu').checked = false;"> </a>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li>
                         <a href="#intro">Home</a>
                     </li>
@@ -57,7 +61,7 @@
     </aside>
 
     <!-- Primeira Seção -->
-    <section class="intro main-bg section">
+    <section id="home" class="intro main-bg section">
 
         <div class="main-content intro-content">
             <div class="intro-text-content">
@@ -298,10 +302,9 @@
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h2>Red Hot Chili Peppers</h2>
-                <p>Red Hot Chili Peppers é uma banda de rock dos Estados Unidos formada em Los Angeles,
-                    Califórnia, em 1983. O estilo musical do grupo consiste principalmente no funk rock,
-                    bem como elementos de outros gêneros, tais como punk, rock alternativo, rap rock e
-                    rock psicodélico. </p>
+                <p>Portifólio feito por uma grande fã da banda. Feito totalmente com HTML e CSS, praticando novas habilidades adquiridas  
+                    com longos estudos e aberta a novos desafios claro, ouvindo uma boa música!
+                </p>
             </div>
 
             <div class="intro-img">
@@ -348,6 +351,8 @@
     <footer id="footer" class="footer white-bg">
         <p> <a rel="nofollow" href="https://www.linkedin.com/in/carolina-nascimento-94b6aa219/" target="_blank"> Feito com ❤️ por Carolina Costa </a> </p>
     </footer>
+
+    <a href="#home" class="back-to-top">🔝</a>
 
 </body>
 
