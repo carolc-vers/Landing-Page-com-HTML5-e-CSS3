@@ -291,6 +291,16 @@
 
 }
 
+@media (max-width: 500px){
+    .grid-main-heading {
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 4rem;
+    }
+}
+
 /* ANIMAÇÕES */
 @keyframes go-back {
     from {
